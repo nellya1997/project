@@ -1032,22 +1032,17 @@ button {
 }
 
 input[type=checkbox] {
-    /* display: none; */
     opacity: 0;
 }
 
 .footer__checkbox-text {
     color: var(--grey);
     cursor: pointer;
+    display: block;
 }
 
 .footer__checkbox {
     display: inline-block;
-}
-
-.footer__checkbox-text {
-    display: block;
-	cursor: pointer;
 }
 
 .footer__checkbox-text input[type=checkbox] {
@@ -1077,6 +1072,14 @@ input[type=checkbox] {
 	top: 5px;
 	transition: all 0.3s ease;
 	background: url(../img/checkbox.svg) 50% 50% no-repeat;
+}
+
+.footer__checkbox-text.hidden span::before {
+    background-image: none;
+}
+
+.footer__checkbox-text.open span::before {
+    background: url(../img/checkbox.svg) 50% 50% no-repeat;
 }
 
 .burger {

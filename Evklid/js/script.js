@@ -111,3 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    let label = document.querySelector('.js-label')
+
+    label.addEventListener('click',
+    function() {
+        label.classList.toggle('open');
+    })
+
+
